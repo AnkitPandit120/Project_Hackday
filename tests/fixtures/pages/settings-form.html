@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Settings</title>
+  </head>
+  <body>
+    <main>
+      <h1>Settings</h1>
+      <form method="post" action="/api/admin/settings">
+        <label for="email">Work email</label>
+        <input id="email" name="email" type="email" autocomplete="email" placeholder="ada@acme.test" required />
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password" value="super-secret-password" autocomplete="current-password" />
+        <input type="hidden" name="csrf_token" value="csrf-secret-value" />
+        <button type="submit">Save settings</button>
+      </form>
+      <button type="button">Delete account</button>
+    </main>
+  </body>
+</html>
