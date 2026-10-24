@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "SnapCrawl",
+  "version": "0.1.0",
+  "description": "Read an authorized tab into a local MCP server for Cursor and Codex.",
+  "permissions": ["tabs", "scripting", "storage", "offscreen", "alarms"],
+  "optional_host_permissions": ["http://*/*", "https://*/*"],
+  "host_permissions": ["http://127.0.0.1/*"],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "SnapCrawl"
+  }
+}
