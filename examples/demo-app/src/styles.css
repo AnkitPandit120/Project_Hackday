@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  font: 16px/1.5 ui-sans-serif, system-ui, sans-serif;
+  color: #1c1917;
+  background: #f6f3ec;
+}
+
+a {
+  color: #0f766e;
+}
+
+main,
+.login {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+nav {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+form {
+  display: grid;
+  gap: 8px;
+  max-width: 320px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border-bottom: 1px solid #d6d3d1;
+  text-align: left;
+  padding: 6px;
+}
+
+button {
+  font: inherit;
+  border: 0;
+  border-radius: 6px;
+  padding: 8px 12px;
+  background: #0f766e;
+  color: white;
+}

@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "snapcrawl": {
+      "command": "node",
+      "args": ["REPLACE_WITH_ABSOLUTE_PATH/apps/mcp-server/dist/index.js"]
+    }
+  }
+}
