@@ -1,0 +1,12 @@
+node_modules
+.pnpm-store
+dist
+*.local
+.DS_Store
+playwright-report
+test-results
+blob-report
+coverage
+.snapcrawl
+*.tsbuildinfo
+audit.jsonl

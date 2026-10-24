@@ -1,0 +1,25 @@
+{
+  "name": "snapcrawl",
+  "private": true,
+  "type": "module",
+  "version": "0.1.0",
+  "packageManager": "pnpm@9.15.0",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "pnpm --filter @snapcrawl/shared build && pnpm --filter @snapcrawl/mcp-server build && pnpm --filter @snapcrawl/extension build",
+    "typecheck": "pnpm --filter @snapcrawl/shared build && pnpm -r --filter !@snapcrawl/shared --filter !@snapcrawl/demo-app typecheck && pnpm --filter @snapcrawl/demo-app typecheck",
+    "test": "pnpm -r --filter !@snapcrawl/demo-app --filter !@snapcrawl/config test",
+    "test:e2e": "playwright test",
+    "demo": "pnpm --filter @snapcrawl/demo-app dev",
+    "mcp": "pnpm --filter @snapcrawl/shared build && pnpm --filter @snapcrawl/mcp-server start"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.28.0",
+    "@playwright/test": "^1.55.0",
+    "@modelcontextprotocol/sdk": "^1.20.2",
+    "eslint": "^9.28.0",
+    "typescript": "^5.8.3"
+  }
+}
